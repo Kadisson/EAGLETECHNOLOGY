@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAGLETECHNOLOGY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/LogoEagletechtrans2.png" type="image/x-icon">
+    <!-- Styles de Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+</head>
+<body>
+    <div id="Principal">
+        <header>
+            <div id="logo">
+                <img src="images/EAgetrans.png" alt="logoEagle">
+            </div>
+        </header>
+        <nav id="navbar" class="initial">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="#">Evènements</a></li>
+                <li><a href="#">Projets</a></li>
+                <li><a href="#">Partenaires</a></li>
+            </ul>
+        </nav>
+        <div class="section" id="Accueil">
+            <div id="club">
+                <div id="welcome-container">
+                    <div id="welcome-text">
+                        <p>Bienvenue sur le site d'EagleTechnology, un club innovant
+                            né à UPB de l'initiative passionnée d'étudiants d’électronique(3EA)
+                            et d’informatique (MIAGE & ASSRI). </p>
+                    </div>
+                    <a id="presentation-button" href="presentation.html">Voir la présentation</a>
+
+                </div>
+                <div class="rejoindre dance-effect" onclick="scrollToBottom()">
+                    <button type="button">Rejoignez-Nous</button>
+                </div>                
+            </div>
+        </div>
+        <div class="section" id="Presentation">
+            <!-- Ajout de la classe slick-carousel à la div contenant le slider -->
+            <div id="slider" class="slick-carousel">
+                <div class="slick-card">
+                    <h1>Article 1</h1>
+                    <p>Ceci est le contenu de l'article 1.</p>
+                </div>
+                <div class="slick-card">
+                    <h1>Article 2</h1>
+                    <p>Ceci est le contenu de l'article 1.</p>
+                </div>
+                <div class="slick-card">
+                    <h1>Article 3</h1>
+                    <p>Ceci est le contenu de l'article 1. <br>
+                        Ceci est le contenu de l'article 1. <br>
+                        Ceci est le contenu de l'article 1. <br>
+                        Ceci est le contenu de l'article 1. <br>
+                        Ceci est le contenu de l'article 1. <br>
+                        Ceci est le contenu de l'article 1. <br>
+                    </p>
+                </div>
+                <div class="slick-card">
+                    <h1>Article 4</h1>
+                    <p>Ceci est le contenu de l'article 2.</p>
+                </div>
+                <!-- Ajoutez autant de slick-card que nécessaire -->
+            </div>
+        </div>
+        <section class="section" id="projets">
+            <h2>Notre palmarès</h2>
+            <div id="prix1">
+                <p>Nous avons participé à ... du ... au ... à ... .<br>
+                    le theme de cet nous avons obtenus le ... prix qui est </p>
+            </div>
+
+            <div id="prix2">
+                <p>Nous avons participé à ... du ... au ... à ... .<br>
+                    le theme de cet nous avons obtenus le ... prix qui est </p>
+            </div>
+                
+            <div id="prix3">
+                <p>Nous avons participé à ... du ... au ... à ... .<br>
+                    le theme de cet nous avons obtenus le ... prix qui est </p>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+            <section id="localisation-footer">
+                <h2>Localisation</h2>
+                <p>EagleTechnology est basée à l'Université Polytechnique de Bingerville (UPB) à Abidjan.
+                </p>
+            </section>
+                <!-- Nouvelle division pour le logo Eagle Technology -->
+            <!-- Logo Google Maps à côté du texte de localisation -->
+            <section id="google-maps-footer">
+                <a href="Lien Google Maps" target="_blank">
+                    <img src="images/icons8-google-maps-old-48.png" alt="Google Maps">
+                </a>
+                <p>Retrouvez-nous sur Google Maps</p>
+            </section>
+        
+            <!-- Liens vers les médias sociaux -->
+            <section id="reseaux-sociaux">
+                <h2>Connectez-vous avec nous</h2>
+                <div class="medias-sociaux">
+                    <a class="effet-survol" href="lien-github" target="_blank"><img src="images/icons8-github-50.png" alt="GitHub"></a>
+                    <a class="effet-survol" href="lien-facebook" target="_blank"><img src="images/icons8-facebook-48.png" alt="Facebook"></a>
+                    <a class="effet-survol" href="lien-instagram" target="_blank"><img src="images/icons8-instagram-48.png" alt="Instagram"></a>
+                    <a class="effet-survol" href="lien-twitter" target="_blank"><img src="images/icons8-twitter-48.png" alt="Twitter"></a>
+                    <a class="effet-survol" href="lien-linkedin" target="_blank"><img src="images/icons8-linkedin-48.png" alt="LinkedIn"></a>
+                </div>
+            </section>
+        
+            <p class="right">&copy; 2023 EAGLETECHNOLOGY. Tous droits réservés.</p>
+        </footer>
+        
+        
+    </div>
+
+<!-- Scripts de Slick Carousel et jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+
+    function scrollToBottom() {
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+        // Sélectionnez la barre de navigation
+var navbar = document.getElementById('navbar');
+
+// Récupérez la position initiale de la barre de navigation
+var initialOffset = navbar.offsetTop;
+
+// Ajoutez un écouteur d'événements de défilement à la fenêtre
+window.addEventListener('scroll', function() {
+    // Vérifiez si le défilement est au-dessus de la position initiale
+    if (window.scrollY > initialOffset) {
+        // Ajoutez la classe pour fixer la barre de navigation
+        navbar.classList.add('fixed');
+    } else {
+        // Retirez la classe si le défilement est en haut
+        navbar.classList.remove('fixed');
+    }
+});
+</script>
+</body>
+</html>
