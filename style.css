@@ -563,6 +563,68 @@ footer {
     filter: brightness(1.2); /* Augmenter la luminosité au survol */
 }
 
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #343d92;
+    border-top: 1px solid #343d92;
+    border-bottom: 1px solid #343d92;
+}
+
+#navbar ul li a:hover {
+    background: linear-gradient(45deg, #ea4335, #fbcb39, #34a853, #4285f4);
+}
+
+
+#navbar ul li {
+    margin: 0;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Nouvelle classe pour positionner et styliser le bouton Rejoignez-Nous */
+#join-us-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#join-us-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#join-us-button button:hover {
+    background-color: #555;
+}
+
+/* Classe pour l'effet de danse */
+.dance-effect {
+    animation: dance 1s infinite;
+}
+
+/* Définition de l'animation de danse */
+@keyframes dance {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
 
 
 

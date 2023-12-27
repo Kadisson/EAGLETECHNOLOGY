@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentation -EagleTechnology</title>
+    <title>Projets -EagleTechnology</title>
     <link rel="icon" href="images/LogoEagletechtrans2.png" >
     <link rel="stylesheet" href="style.css">
     <!-- Styles de Slick Carousel -->
@@ -19,6 +19,17 @@ body {
             padding: 0;
             background-color: #242424;
             color: #fff;
+        }
+
+                /* Ajoutez ces styles pour l'effet de survol sur les projets */
+        .member-box {
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre par défaut */
+        }
+
+        .member-box:hover {
+            transform: scale(1.1);
+            background-color: #776e67; /* Nouvelle couleur au survol (ajustez selon vos préférences) */
         }
 
         #Principal {
@@ -108,11 +119,22 @@ body {
             transform: scale(1.05);
         }
 
-        .member-photo {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
+        /* Nouvelle règle pour l'effet de danse sur les photos du carrousel */
+@keyframes dance {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+    75% { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.member-photo {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    animation: dance 4s infinite; /* Appliquez l'animation à la photo du membre */
+}
+
 
         footer {
             background-color: #333;
@@ -193,7 +215,7 @@ body {
 #join-us-button button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #3a1c1c;
+    background-color: #e68787;
     color: #fff;
     border: none;
     border-radius: 15px;
@@ -243,103 +265,84 @@ body {
         </nav>
 
         <div id="presentation">
-            <h1>Présentation de EagleTechnology</h1>
-            <p>Bienvenue sur le site d'EagleTechnology, un club innovant
-                née à UPB de l'initiative passionnée d'étudiants d’electronique(3EA)
-                et d’informatique (MIAGE & ASSRI) .
-                📍 Localisation: UPB (Université Polytechnique de Bingerville)
-                📅
-                Date de création: Fondée dans le cadre d'une association
-                étudiante, EagleTechnology a tracé son chemin depuis
-                2020.
-                pour devenir une véritable startup dédiée à la digitalisation des
-                activités.
-                Notre mission consiste à relever les défis de la connectivité en
-                développant des projets novateurs grâce à la digitalisation,
-                incluant des applications web et mobiles, la robotique et
-                l'automatisme. Nous encourageons la collaboration
-                interdisciplinaire en réunissant des étudiants de différentes
-                filières, tels que la 3EA, la Miage et l'Assri.</p>
-                <h1>Histoire de EagleTechnology</h1>
-                <p>EagleTechnology trouve son origine dans une association
-                    d'étudiants qui nourrissaient l'ambition de donner naissance à une
-                    startup arborant le nom de EagleTechnology. Leur action était
-                    orientée vers des projets d'écologie et d'énergies nouvelles et
-                    renouvelables, rendus réalisables par la digitalisation des secateurs
-                    d'activités. Face aux défis de la connectivité, ils entreprenaient
-                    ces avancées à travers des applications web et mobiles,
-                    la robotique et l'automatisme.
-                    Fidèle Dagne, issu de la filière 3EA, assumait la fonction de
-                    fondateur et président de cette association. Son objectif était de
-                    faire évoluer cette entité estudiantine vers une startup. Il
-                    collaborait avec ses pairs de la filière Miage et Assri pour soutenir
-                    la formation universitaire. Dans cette perspective, il a décidé
-                    d'établir une section club au sein de l'UPB, englobant diverses
-                    filières afin d'attirer un nombre conséquent d'étudiants. Ces
-                    derniers étaient appelés à se concentrer sur la formation qu'ils
-                    allaient recevoir, et à leur tour, à former d'autres adhérents. Ce
-                    système reposait sur un modèle de parrainage et de filleul s'articulant chaque année dans le dessein d'élever le niveau de chaque étudiant ayant
-                    adhéré à la section club. Par conséquent, Fidèle Dagne a transmis la responsabilité du club
-                    à Carole Koba, puis à Daniel Kambiré, son successeur à la présidence.
-
-                </p>
-
+            <h1>Découvrez nos Projets Innovants</h1>
+            <p>Nous sommes fiers de partager avec vous certains de nos projets les plus passionnants. Chacun d'eux est le fruit de l'innovation, de la créativité et de l'engagement de nos membres. Explorez nos réalisations ci-dessous :</p>
+            
         </div>
         <section id="members-slider">
             <div class="member-box">
-                <img class="member-photo" src="images/daniel.jpg" alt="Membre 1">
-                <h3>Kambiré Daniel Kislon</h3>
-                <p>- Président de la section club 2023-2024 <br>
-                    - étudiant en Administration et Sécurité des Systèmes et Réseaux Informatiques (ASSRI); de niveau licence 3.</p>
+                <img class="member-photo" src="images/DSC00425.JPG" alt="Membre 1">
+                <h3>Nom Projet 1</h3>
+                <p>Description Projet 1.</p>
+            </div>
+            <div class="member-box">
+                <img class="member-photo" src="images/DSC00425.JPG" alt="Membre 2">
+                <h3>Nom Projet 2</h3>
+                <p>Description Projet 2.</p>
+            </div>
+            <div class="member-box">
+                <img class="member-photo" src="images/DSC00425.JPG" alt="Membre 3">
+                <h3>Nom Projet 3</h3>
+                <p>Description Projet 3.</p>
             </div>
             <div class="member-box">
                 <img class="member-photo" src="images/DSC00425.JPG" alt="Membre 4">
-                <h3>Adepoju Abirat</h3>
-                <p>- Sécrétaire Générale<br>
-                    - étudiante en Electronique Energie Electrique Automatique (3EA) ; de niveau licence 3.</p>
+                <h3>Nom Projet 4</h3>
+                <p>Description Projet 4.</p>
             </div>
             <div class="member-box">
-                <img class="member-photo" src="images/josue.jpg" alt="Membre 2">
-                <h3>Coulibaly Josué</h3>
-                <p>- Manager 3EA <br>
-                    - étudiant en Electronique Energie Electrique Automatique (3EA); de niveau licence 3.</p>
+                <img class="member-photo" src="images/DSC00425.JPG" alt="Membre 4">
+                <h3>Nom Projet 5</h3>
+                <p>Description Projet 5.</p>
             </div>
             <div class="member-box">
-                <img class="member-photo" src="images/max.jpg" alt="Membre 3">
-                <h3>Biley Max Auriol</h3>
-                <p>- Manager IT <br>
-                    - étudiant en Méthodes Informatiques Appliquées à la Gestion des Entreprises (MIAGE); de niveau licence 3.</p>
+                <img class="member-photo" src="images/DSC00425.JPG" alt="Membre 4">
+                <h3>Nom Projet 6</h3>
+                <p>Description Projet 6.</p>
             </div>
             <div class="member-box">
-                <img class="member-photo" src="images/fatim.jpg" alt="Membre 4">
-                <h3>Coulibaly Fatim</h3>
-                <p>- Tresorière Générale<br>
-                    - étudiante en Electronique Energie Electrique Automatique (3EA) ; de niveau licence 3.</p>
+                <img class="member-photo" src="images/DSC00425.JPG" alt="Membre 4">
+                <h3>Nom Projet 7</h3>
+                <p>Description Projet 7.</p>
             </div>
         </section>
 
         <div id="members-container">
             <div class="member-box">
-                <img class="member-photo" src="images/acceuil2.JPG" alt="Membre 1">
-                <h3>Nom Membre 1</h3>
-                <p>Description Membre 1.</p>
+                <img class="member-photo" src="images/DSC00425.JPG" alt="Membre 1">
+                <h3>Nom Projet 1</h3>
+                <p>Description Projet 1.</p>
             </div>
             <div class="member-box">
-                <img class="member-photo" src="images/coworking1.jpg" alt="Membre 2">
-                <h3>Nom Membre 2</h3>
-                <p>Description Membre 2.</p>
+                <img class="member-photo" src="images/DSC00425.JPG" alt="Membre 2">
+                <h3>Nom Projet 2</h3>
+                <p>Description Projet 2.</p>
             </div>
             <div class="member-box">
-                <img class="member-photo" src="images/coworking2.jpg" alt="Membre 3">
-                <h3>Nom Membre 3</h3>
-                <p>Description Membre 3.</p>
+                <img class="member-photo" src="images/DSC00425.JPG" alt="Membre 3">
+                <h3>Nom Projet 3</h3>
+                <p>Description Projet 3.</p>
             </div>
             <div class="member-box">
-                <img class="member-photo" src="images/coworking3.jpg" alt="Membre 4">
-                <h3>Nom Membre 4</h3>
-                <p>Description Membre 4.</p>
+                <img class="member-photo" src="images/DSC00425.JPG" alt="Membre 4">
+                <h3>Nom Projet 4</h3>
+                <p>Description Projet 4.</p>
             </div>
-
+            <div class="member-box">
+                <img class="member-photo" src="images/DSC00425.JPG" alt="Membre 4">
+                <h3>Nom Projet 5</h3>
+                <p>Description Projet 5.</p>
+            </div>
+            <div class="member-box">
+                <img class="member-photo" src="images/DSC00425.JPG" alt="Membre 4">
+                <h3>Nom Projet 6</h3>
+                <p>Description Projet 6.</p>
+            </div>
+            <div class="member-box">
+                <img class="member-photo" src="images/DSC00425.JPG" alt="Membre 4">
+                <h3>Nom Projet 7</h3>
+                <p>Description Projet 7.</p>
+            </div>
         </div>
 
         <footer>
@@ -378,7 +381,7 @@ body {
             // Initialisation du carrousel
             $('#members-slider').slick({
                 infinite: true,
-                slidesToShow: 2,
+                slidesToShow: 5,
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
